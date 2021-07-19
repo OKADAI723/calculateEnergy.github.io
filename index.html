@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./base.css">
+    <title>1日に必要なカロリー計算</title>
+</head>
+
+<body>
+    <header>
+        <h1>1日に必要な推定エネルギー量計算</h1>
+    </header>
+
+
+
+    <h3>1日に必要なエネルギー量(推定) = <span class="basic">①基礎代謝量</span> × <span class="level">②身体活動レベル指数</span></h3>
+
+
+    <h4> <span class="calcBasicEnergy">①基礎代謝量(kcal/日)</span> </h4>
+
+
+    <div id="inputInfo">
+        <div>
+            <label>
+                <input type="radio" name="sex" value="male" checked>
+                男性
+            </label>
+
+            <label>
+                <input type="radio" name="sex" value="female">
+                女性
+            </label>
+        </div>
+
+        <div>
+            <label>
+                年齢:
+                <input type="text" id="age">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                身長:
+                <input type="text" id="height">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                体重:
+                <input type="text" id="weight">
+            </label>
+        </div>
+    </div>
+
+
+
+    <p id="user-basicEnergy"></p>
+
+
+    <div>
+        <h4> <span class="calcLevel">②身体活動レベル指数</span> </h4>
+
+        <table border="1">
+            <tr>
+                <th>身体活動レベル</th>
+                <th>活動内容</th>
+            </tr>
+            <tr>
+                <td>レベルⅠ(1.5)</td>
+                <td>生活の大部分が座位で、静的な活動が中心の場合</td>
+            </tr>
+            <tr>
+                <td>レベルⅡ(1.75)</td>
+                <td>座位中心の仕事だが、職場内での移動や立位での作業・接客等、あるいは通勤・買物・家事、軽いスポーツ等のいずれかを含む場合</td>
+            </tr>
+            <tr>
+                <td>レベルⅢ(2.0)</td>
+                <td>移動や立位の多い仕事への従事者。あるいは、スポーツなど余暇における活発な運動習慣をもっている場合</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="checkLevel">
+        <label>
+            <input type="radio" name="level" value="level1" checked>
+            レベルⅠ
+        </label>
+
+        <label>
+            <input type="radio" name="level" value="level2">
+            レベルⅡ
+        </label>
+
+        <label>
+            <input type="radio" name="level" value="level3">
+            レベルⅢ
+        </label>
+    </div>
+
+    <p id="user-Result"></p>
+
+    <div id="calcButton">
+        <button class="calc" type="button" onclick="checkEmpty()">計算</button>
+
+    </div>
+
+    <div id="resetButton">
+        <button class="reset" type="button" onclick="reset()">リセット</button>
+    </div>
+
+    <script src="./js/calculate.js"></script>
+</body>
+
+</html>

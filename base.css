@@ -1,0 +1,128 @@
+@charset "utf-8";
+body {
+    background-color: #F2F0D5;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: #697AAC;
+}
+
+h4 {
+    text-align: center;
+}
+
+/* 計算式全体 */
+
+h3 {
+    text-align: center;
+}
+
+/* 計算式の基礎代謝 */
+
+.basic {
+    background: linear-gradient(transparent 60%, #ffff66 60%);
+}
+
+/* 計算式の身体活動レベル */
+
+.level {
+    background: linear-gradient(transparent 60%, #66FFCC 60%);
+}
+
+/* ①基礎代謝量 */
+
+.calcBasicEnergy {
+    background: linear-gradient(transparent 60%, #ffff66 60%);
+}
+
+/* ②身体活動レベル*/
+
+.calcLevel {
+    background: linear-gradient(transparent 60%, #66FFCC 60%);
+}
+
+/* 表の設定 */
+
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    /*文字色*/
+    color: white;
+    /*背景色*/
+    background: #697ABD;
+}
+
+/* ①で入力される情報 */
+
+#inputInfo {
+    text-align: center;
+}
+
+/* 身体活動レベルを選択するラジオボタン */
+
+#checkLevel {
+    text-align: center;
+}
+
+/* 計算結果を表示するパラグラフの設定 */
+
+p {
+    text-align: center;
+}
+
+#user-basicEnergy {
+    color: red;
+    font-weight: bold;
+}
+
+#user-Result {
+    color: red;
+    font-weight: bold;
+}
+
+/* ボタンの設定 */
+
+#calcButton {
+    text-align: center;
+}
+
+#resetButton {
+    text-align: center;
+}
+
+/* 計算ボタンの設定 */
+
+.calc {
+    height: 50px;
+    width: 100px;
+    margin: 1em 0;
+    line-height: 50px;
+    background: tomato;
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 5px 0 gold;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* リセットボタンの設定 */
+
+.reset {
+    height: 50px;
+    width: 100px;
+    margin: 1em 0;
+    line-height: 50px;
+    background: tomato;
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 5px 0 gold;
+    text-decoration: none;
+    text-align: center;
+}
